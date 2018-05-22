@@ -24,19 +24,19 @@ describe("sumOfNumbers", function () {
 //q2
 describe("divisionofNumbers", function () {
   it("should return true when number is divisible by both divisors", function () {
-    expect(isDivisible([8, 4, 2])).toBe(1);
+    expect(isDivisible([8, 4, 2])).toBe(true);
   })
 
   it("should  return false when the number is smaller than divisors", function () {
-    expect(isDivisible([2, 8, 10])).toBe(0);
+    expect(isDivisible([2, 8, 10])).toBe(false);
   })
 
   it("should return false when the number is not divisible by any one of the two", function () {
-    expect(isDivisible([8, 2, 3])).toBe(0);
+    expect(isDivisible([8, 2, 3])).toBe(false);
   })
 
   it("should return false when the number is not divisible by any of them", function () {
-    expect(isDivisible([8, 6, 10])).toBe(0);
+    expect(isDivisible([8, 6, 10])).toBe(false);
   })
 
 
